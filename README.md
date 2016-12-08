@@ -1,3 +1,30 @@
 # SpringBoot-AngularJs_SpringSecurity
-This is a simple project for demonstrating how one can develop applications easly using the latest technologies, namely, Spring boot, angularJs and Spring security.
+This is a kick-starter project for demonstrating how one can develop applications easly using the latest technologies, namely, Spring boot, angularJs and Spring security. 
 This will also be enhanced by including even more frameworks and technologies on the go. 
+
+# Configurations
+
+Open the application.properties file and set your own configurations:
+
+Database connection parameters (this example uses MySQL5 as DBMS, Hibernate ORM and SpringJpa )
+Hibernate Search's index directory
+# Prerequisites
+
+Java 8
+Maven > 3.0
+# Build and Run
+
+# From terminal
+
+Go on the project's root folder, then type:
+  $ mvn clean install
+Then run the built application using this commande.
+  $ mvn spring-boot:run
+  
+# From IntelliJ or From Eclipse (Spring Tool Suite)
+
+Import as Existing Maven Project and run it as Spring Boot App.
+
+# Usage
+
+To visit the running application, just yype the url http://localhost:8080/ at your favorite browser. If you have chnaged the server port in the properties file, please change the port of this URL.
