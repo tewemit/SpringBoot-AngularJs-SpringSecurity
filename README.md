@@ -12,13 +12,16 @@ Hibernate Search's index directory
 # Prerequisites
 
 Java 8
+
 Maven > 3.0
+
 # Build and Run
 
 # From terminal
 
 Go on the project's root folder, then type:
   $ mvn clean install
+  
 Then run the built application using this commande.
   $ mvn spring-boot:run
   
