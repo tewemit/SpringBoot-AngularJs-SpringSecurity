@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="app"  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title ng-bind="title"></title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/angular-bootstrap.css" rel="stylesheet">
+
+<style type="text/css">
+[ng\:cloak], [ng-cloak], .ng-cloak
+{
+  display: none !important;
+}
+</style>
+</head>
+
+<body  ng-cloak class="ng-cloak">
+
+<!-- This Div is used to include the header menus and navigation bar. -->
+    <div class="row" ng-include="'header.html'">
+
+    </div>
+<!-- This Div is the destination of content changes -->
+    <div >
+
+        <div ng-view class="container" style="width: 100%;">
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
