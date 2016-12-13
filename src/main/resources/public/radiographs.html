@@ -1,0 +1,29 @@
+<div class="row">
+
+    <div ng-controller="radiographCtl" class="col-md-12" id="radiographList" style="background-color: #dddddd; position: relative; padding-left: 10px"
+         ng-model="radiograph">
+        <div ng-model="patient">
+            <h2 style="color: #5e5e5e;font-family:'Viner Hand ITC' ">Radiographs </h2>
+        </div>
+        <div ng-repeat="radiograph in radiograph.radiographs" class="col-md-4" style="width: 40%; position: relative">
+
+            <div class="row-content" style="padding-top: 5px">
+                <h3 class="list-group-item-heading" style="color: #5e5e5e;font-family:'sans-serif' ">{{radiograph.title}} </h3>
+
+                <p class="list-group-item-text" style="justify-content: center"><b><em><strong>{{radiograph.desctiption}} </strong></em></b>
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <H2> Patient details</H2>
+            <hr>
+            {{radiograph.patient.PIN}} <br>
+            {{radiograph.patient.firstname}} <br>
+            {{radiograph.patient.lastname}}
+
+        </div>
+
+
+    </div>
+</div>

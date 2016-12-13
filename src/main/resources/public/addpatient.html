@@ -1,0 +1,37 @@
+
+<div ng-controller="patientCtl" style="align-content: center; vertical-align: top;
+background-color: #8c8c8c; opacity: 0.5; border-style: dotted" >
+<span ng-show="authenticationError" class="help-block">
+    Please check the entries and try again.
+     </span>
+    <h1> <u> Patient Registration Form</u></h1>
+    <form role="form" ng-submit="addpatient()" class="well-body loginForm">
+        <div class="form-group">
+            <label for="PIN">PIN:</label>
+            <input type="text" class="form-control" id="PIN" name="PIN" ng-model="pin"/>
+        </div>
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" ng-model="firstname" />
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" ng-model="lastname"/>
+        </div>
+
+        <label for="gender"> Gender: </label><br>
+        <select name="gender" id="gender" ng-model="gender">
+            <option value="">---Please select---</option>
+            <option value="female">female</option>
+            <option value="male">male</option>
+        </select>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="agreed"/><span> I agree that the above information is correct.</span>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Patient</button>
+
+    </form>
+</div>

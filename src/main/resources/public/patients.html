@@ -1,0 +1,23 @@
+<div class="row">
+
+    <div ng-controller="patientCtl" class="col-md-12" id="patientList" style="background-color: #dddddd; position: relative; padding-left: 10px"
+         ng-model="patients">
+        <div>
+            <h2 style="color: #5e5e5e;font-family:'Viner Hand ITC' ">Patients </h2>
+        </div>
+        <table ng-repeat="patient in patients" class="col-md-4" style="width: 40%; position: relative">
+
+            <tr class="row-content" style="padding-top: 5px" ng-model="patient">
+                <td >{{$index + 1}} </td>
+                <td >{{patient.pin}} </td>
+                <td >{{patient.firstname}}  {{patient.lastname}}</td>
+                <td ><b><em><strong><a href="" ng-click="getPatientRadiographs()"> Radiographs </a></strong></em></b></td>
+                <td ><b><em><strong><a href="" ng-click="addPatientRadiograph()"> Add Radiograph </a></strong></em></b></td>
+            </tr>
+
+        </table>
+
+
+
+    </div>
+</div>
