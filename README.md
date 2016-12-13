@@ -31,4 +31,8 @@ Import as Existing Maven Project and run it as Spring Boot App.
 
 # Usage
 
-To visit the running application, just yype the url http://localhost:8080/ at your favorite browser. If you have chnaged the server port in the properties file, please change the port of this URL.
+To visit the running application, just yype the url http://localhost:8081/ at your favorite browser. If you have chnaged the server port in the properties file, please change the port of this URL. 
+Spring security is gonna ask to login and use the credentials below. 
+# login credentials
+username: user
+password: user
